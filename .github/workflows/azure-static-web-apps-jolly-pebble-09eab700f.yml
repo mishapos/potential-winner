@@ -31,6 +31,10 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+      - name: Clean the workspace
+        uses: docker://alpine
+        with:
+          args: /bin/sh -c "rm -rf /github/workspace/.* || rm -rf /github/workspace/*"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
