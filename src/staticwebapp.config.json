@@ -12,6 +12,11 @@
   },
   "routes": [
     {
+      "route": "/test",
+      "statusCode": "302",
+      "redirect": "/index.html"
+    },
+    {
       "route": "/login",
       "methods": null,
       "allowedRoles": [
