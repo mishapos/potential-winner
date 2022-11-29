@@ -12,6 +12,14 @@
   },
   "routes": [
     {
+      "route": "/bar",
+      "rewrite": "index_2.html",
+      "allowedRoles": [
+        "anonymous",
+        "authenticated"
+      ]
+    },
+    {
       "route": "/test",
       "statusCode": "302",
       "redirect": "/index.html"
