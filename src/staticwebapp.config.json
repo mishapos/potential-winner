@@ -15,7 +15,6 @@
       "route": "/bar",
       "rewrite": "index_2.html",
       "allowedRoles": [
-        "anonymous",
         "authenticated"
       ]
     },
