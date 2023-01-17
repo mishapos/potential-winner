@@ -79,7 +79,7 @@
       "rewrite": null
     },
     {
-      "route": "/Connections With Spaces/*",
+      "route": "/*",
       "methods": null,
       "allowedRoles": [
         "authenticated"
