@@ -77,6 +77,16 @@
       "statusCode": null,
       "redirect": null,
       "rewrite": null
+    },
+    {
+      "route": "/Connections With Spaces/*",
+      "methods": null,
+      "allowedRoles": [
+        "authenticated"
+      ],
+      "statusCode": null,
+      "redirect": null,
+      "rewrite": null
     }
   ],
   "responseOverrides": {
