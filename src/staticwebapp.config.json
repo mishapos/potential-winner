@@ -9,24 +9,5 @@
         }
       }
     }
-  },
-  "routes": [
-    {
-      "route": "/*",
-      "methods": null,
-      "allowedRoles": [
-        "authenticated"
-      ],
-      "statusCode": null,
-      "redirect": null,
-      "rewrite": null
-    }
-  ],
-  "responseOverrides": {
-    "401": {
-      "redirect": "/.auth/login/aad?post_login_redirect_uri=.referrer",
-      "rewrite": null,
-      "statusCode": 302
-    }
   }
 }
