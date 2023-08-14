@@ -1,12 +1,2 @@
 {
-  "routes": [
-    {
-      "route": "/connections/*",
-      "rewrite": "index_2.html"
-    },
-    {
-      "route": "/connections/file2.html",
-      "rewrite": "index_3.html"
-    }
-  ]
 }
