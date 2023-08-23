@@ -9,44 +9,29 @@
         }
       }
     }
-  }
+  },
   "routes": [
     {
-    "route": "/admin/index.html",
-    "methods": null,
-    "allowedRoles": [
-      "authenticated",
-      "special"
-    ],
-    "statusCode": null,
-    "redirect": null,
-    "rewrite": null
-  },
+      "route": "/admin/index.html",
+      "methods": null,
+      "allowedRoles": [
+        "authenticated",
+        "special"
+      ]
+    },
     {
-    "route": "/login",
-    "methods": null,
-    "allowedRoles": [],
-    "statusCode": null,
-    "redirect": null,
-    "rewrite": "/.auth/login/aad"
-  },
-  {
-    "route": "/logout",
-    "methods": null,
-    "allowedRoles": [],
-    "statusCode": null,
-    "redirect": "/.auth/logout",
-    "rewrite": null
-  },
-  {
-    "route": "/*",
-    "methods": null,
-    "allowedRoles": [
-      "anonymous"
-    ],
-    "statusCode": null,
-    "redirect": null,
-    "rewrite": null
-  }
+      "route": "/login",
+      "rewrite": "/.auth/login/aad"
+    },
+    {
+      "route": "/logout",
+      "redirect": "/.auth/logout"
+    },
+    {
+      "route": "/*",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    }
   ]
 }
